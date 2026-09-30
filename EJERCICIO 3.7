@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+float CalcularSuperficie (float longitud, float ancho)
+{
+    float superficie;
+    superficie = longitud * ancho;
+    return superficie;
+};
+
+main()
+{
+    float longitud=0, ancho=0;   
+    float superficie;            
+
+    cout<<"Ingresa la longitud de la habitacion: ";
+    cin>>longitud;
+
+    cout<<"Ingresa el ancho de la habitacion: ";
+    cin>>ancho;
+
+    superficie=CalcularSuperficie(longitud,ancho);
+
+    cout<<"Superficie: "<<superficie;
+}
